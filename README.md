@@ -1,30 +1,51 @@
-# Test
+# Git使用方法-简版
 
-## 如何启动本项目
-
-1. 使用git命令，将本项目同步到本地：
-
-   `git clone https://github.com/WuJiang5521/ZJU_SummerSchool_ProjectTemplate.git`
+### 1. 创建远程仓库
    
-2. 在项目文件夹内，使用git命令，修改remote到你们小组的仓库：
+   github上面create repository，注意不要用README.md初始化仓库，即创建时下图的这个别选。
+   
+   ![UM4yWV.jpg](https://s1.ax1x.com/2020/07/11/UM4yWV.jpg)
 
-   将原来的远程仓库重命名：`git remote rename origin template-origin`
+### 2. 使用git命令，在本地克隆远程仓库
    
-   添加你的远程仓库地址：`git remote add origin your_remote_url`
+   `git clone https://github.com/daibi07/Test1.git`
+
+### 3. 设置签名
+
+   `git config user.name "你的用户名"`
    
+   `git config user.email "你的邮箱"`
+   
+   也可以进行全局设置，也就是clone到本机上的所有项目都用一个签名：
+   
+   `git config --global user.name "你的用户名"`
+
+   用此命令查看设置：
+   `git config -l`
+
+### 4. 项目修改后提交到本地仓库
+
    添加文件修改：`git add .`
-   
-   提交文件修改：`git commit -m "Initial Commit"`
-   
-   上传：`git push -u origin master`
-   
-3. 在项目文件夹内，使用npm运行项目：
 
-   安装所有依赖库：`npm install`
+   提交文件修改到本地仓库：`git commit -m "XXXX"`（里面就是填个版本号吧）
    
-   运行项目：`npm start`
+### 5. 将本地仓库提交到远程仓库（push）   
    
-   如果能正常运行，你应该可以看到浏览器中出现四个区域，每个区域有一个数字0和一个按钮。
-   点击任意按钮都可以使四个数字加一。
+   先通过命令git remote show [remote-name] 查看某个远程仓库的详细信息，比如要看所克隆的origin仓库，可以运行：
    
-## 本项目目前已安装的库
+   `git remote show origin`
+   
+   如果这个远程仓库的地址与你所想提交的地址不符，可以进行修改：
+   
+      `git remote rm origin`
+   
+      `git remote add origin your_remote_url`
+   
+   提交到远程仓库：`git push -u origin master`
+   
+   push时可能会报错说“更新被拒绝，因为远程仓库包含您本地尚不存在的提交”，可参考此[解决方法](https://blog.csdn.net/XiangJiaoJun_/article/details/83721557?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase)
+   
+### 6. 将远程仓库同步到本地（pull）
+
+   `git pull origin master`
+
