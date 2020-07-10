@@ -1,5 +1,7 @@
 # Git使用方法-简版
 
+## 命令行操作
+
 ### 1. 创建远程仓库
    
    github上面create repository，注意不要用README.md初始化仓库，即创建时下图的这个别选。
@@ -37,9 +39,9 @@
    
    如果这个远程仓库的地址与你所想提交的地址不符，可以进行修改：
    
-      `git remote rm origin`
+   `git remote rm origin`
    
-      `git remote add origin your_remote_url`
+   `git remote add origin your_remote_url`（如：https://github.com/daibi07/Test1.git）
    
    提交到远程仓库：`git push -u origin master`
    
@@ -48,4 +50,49 @@
 ### 6. 将远程仓库同步到本地（pull）
 
    `git pull origin master`
+
+## VS Code中操作（前3步一致）
+
+### 4. 项目修改后提交到本地仓库
+
+   4.1 添加文件修改
+   
+   * 在这里可以看到所有工作区还没有提交暂存区的操作
+   
+   ![1](https://img-blog.csdnimg.cn/20190410123702931.png)
+   
+   * 添加到暂存区
+   
+   ![222](https://img-blog.csdnimg.cn/2019041012400147.png)
+   
+   以上步骤相当于执行了：`git add .`
+   
+   4.2 提交到本地仓库
+   
+   ![333](https://img-blog.csdnimg.cn/20190410124526338.png)
+
+   相当于执行了：`git commit -m "XXXX"`
+
+### 5. 将本地仓库提交到远程仓库（push）
+
+   ![55](https://img-blog.csdnimg.cn/20190410124824726.png)
+
+   ![555](https://img-blog.csdnimg.cn/20190410125013939.png)
+
+   ![5555](https://img-blog.csdnimg.cn/20190410125121390.png)
+   
+   以上步骤相当于执行了：`git push -u origin master`
+
+### 6. 将远程仓库同步到本地（pull）
+
+   ![66](https://img-blog.csdnimg.cn/20190410125818250.png)
+   
+   此步骤相当于执行了：`git pull origin master`
+   
+## 参考资料
+
+1. [如何在VSCode中使用Git](https://blog.csdn.net/sacredness/article/details/89179435)
+2. [廖雪峰的Git教程](https://www.liaoxuefeng.com/wiki/896043488029600/898732864121440)
+3. [Git远程仓库管理](https://www.cnblogs.com/lazb/articles/5597878.html)
+3. [新增SSH密钥到GitHub 帐户](https://docs.github.com/cn/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 
