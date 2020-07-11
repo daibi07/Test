@@ -94,5 +94,6 @@
 1. [如何在VSCode中使用Git](https://blog.csdn.net/sacredness/article/details/89179435)
 2. [廖雪峰的Git教程](https://www.liaoxuefeng.com/wiki/896043488029600/898732864121440)
 3. [Git远程仓库管理](https://www.cnblogs.com/lazb/articles/5597878.html)
-3. [新增SSH密钥到GitHub 帐户](https://docs.github.com/cn/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+4. [新增SSH密钥到GitHub 帐户](https://docs.github.com/cn/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
+5. [Git和Repository简明理解](https://blog.csdn.net/o707191418/article/details/102828376?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase)
 
