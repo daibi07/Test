@@ -96,6 +96,7 @@
 3. [Git远程仓库管理](https://www.cnblogs.com/lazb/articles/5597878.html)
 4. [新增SSH密钥到GitHub 帐户](https://docs.github.com/cn/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account)
 5. [Git和Repository简明理解](https://blog.csdn.net/o707191418/article/details/102828376?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase)
-6. [github的dev和master分支介绍](https://www.cnblogs.com/hdulzt/articles/7208400.html)
+6. [Github的dev和master分支介绍](https://www.cnblogs.com/hdulzt/articles/7208400.html)
+7. [GitHub多人队伍合作详细教程](https://blog.csdn.net/sculpta/article/details/104448310)
 
 
